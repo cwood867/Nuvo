@@ -1,0 +1,168 @@
+<gui>
+  <properties>
+    <project>NuVo</project>
+    <designer>
+    </designer>
+    <size>
+      <portrait width="768" height="1024" />
+      <landscape width="1024" height="768" />
+    </size>
+    <imagefolder>
+    </imagefolder>
+    <debug loaderrors="0" connectionerrors="0" />
+    <devices>
+      <device name="iPad">91F878ADDC050A4156113E969911781E</device>
+      <device name="iPad2">60FC98A3F766791726301CB376BF4CBE</device>
+    </devices>
+  </properties>
+  <systems>
+    <system name="NUVO" ip="192.168.11.16" port="4999" protocol="tcp" alwayson="1" accept="0" ssl="0" maxconnections="0" heartbeatRx="" heartbeatTx="" heartbeatMode="-1" eom="\x0D" connectionStatus="0" disconnectionStatus="0">
+      <fb name="NUVO_Feedback" regex="(.*)" />
+    </system>
+  </systems>
+  <macros>
+    <macro name="_" />
+  </macros>
+  <themes>
+    <theme type="background" name=".landscape"><![CDATA[ background-image: url(Assets\Backgrounds\bg_landscape.png); background-repeat: no-repeat;]]></theme>
+    <theme type="text" name=".title"><![CDATA[ text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 18px; font-family: 'Verdana'; text-align: center; vertical-align: middle; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="button" name=".btn_list_disabled[state='0']"><![CDATA[padding: 0px 0px 0px 0px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: top; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_list_disabled[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_list_disabled.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: top; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="gauge" name=".v_lrg[state='0']"><![CDATA[ background-image: url(Assets\Sliders\slider_lrg_v_off.png);]]></theme>
+    <theme type="gauge" name=".v_lrg[state='1']"><![CDATA[ background-image: url(Assets\Sliders\slider_lrg_v_on.png);]]></theme>
+    <theme type="text" name=".status_left"><![CDATA[ text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 24px; font-family: 'Arial'; text-align: left; vertical-align: middle; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="text" name=".title_left"><![CDATA[ text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 18px; font-family: 'Verdana'; text-align: left; vertical-align: middle; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="text" name=".title_right"><![CDATA[ text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 18px; font-family: 'Verdana'; text-align: right; vertical-align: middle; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="gauge" name=".trackpos[state='0']"><![CDATA[ background-image: url(Assets\Sliders\gauge_h_off.png);]]></theme>
+    <theme type="gauge" name=".trackpos[state='1']"><![CDATA[ background-image: url(Assets\Sliders\gauge_h_on.png);]]></theme>
+    <theme type="gauge" name=".v_small[state='0']"><![CDATA[ background-image: url(Assets\Sliders\slider_small_v_off.png);]]></theme>
+    <theme type="gauge" name=".v_small[state='1']"><![CDATA[ background-image: url(Assets\Sliders\slider_small_v_on.png);]]></theme>
+    <theme type="gauge" name=".h_small[state='0']"><![CDATA[ background-image: url(Assets\Sliders\slider_small_h_off.png);]]></theme>
+    <theme type="gauge" name=".h_small[state='1']"><![CDATA[ background-image: url(Assets\Sliders\slider_small_h_on.png);]]></theme>
+    <theme type="gauge" name=".h_lrg[state='0']"><![CDATA[ background-image: url(Assets\Sliders\slider_lrg_h_off.png);]]></theme>
+    <theme type="gauge" name=".h_lrg[state='1']"><![CDATA[ background-image: url(Assets\Sliders\slider_lrg_h_on.png);]]></theme>
+    <theme type="button" name=".btn_arrowdown[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_arrowdown_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_arrowdown[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_arrowdown_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_arrowleft[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_arrowleft_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_arrowleft[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_arrowleft_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_arrowok[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_arrowok_off.png); text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 24px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_arrowok[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_arrowok_on.png); text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 24px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_arrowright[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_arrowright_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_arrowright[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_arrowright_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_arrowup[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_arrowup_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_arrowup[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_arrowup_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_back[state='0']"><![CDATA[padding: 0px 7px 0px 14px; -webkit-border-image: url(Assets\Buttons\btn_back_off.png) 0 7 0 14; text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_back[state='1']"><![CDATA[padding: 0px 7px 0px 14px; -webkit-border-image: url(Assets\Buttons\btn_back_on.png) 0 7 0 14; text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_bar[state='0']"><![CDATA[padding: 0px 6px 0px 6px; -webkit-border-image: url(Assets\Buttons\btn_bar_off.png) 0 6 0 6; text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_bar[state='1']"><![CDATA[padding: 0px 6px 0px 6px; -webkit-border-image: url(Assets\Buttons\btn_bar_on.png) 0 6 0 6; text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_list[state='0']"><![CDATA[padding: 0px 0px 0px 5px; background-image: url(Assets\Buttons\btn_list_off.png); color: White; font-size: 22px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: left; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_list[state='1']"><![CDATA[padding: 0px 0px 0px 5px; background-image: url(Assets\Buttons\btn_list_on.png); color: White; font-size: 22px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: left; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_lrg[state='0']"><![CDATA[padding: 0px 9px 0px 9px; -webkit-border-image: url(Assets\Buttons\btn_lrg_off.png) 0 9 0 9; text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 22px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_lrg[state='1']"><![CDATA[padding: 0px 9px 3px 9px; -webkit-border-image: url(Assets\Buttons\btn_lrg_on.png) 0 9 3 9; text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 22px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_menu_cinema[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_menu_cinema_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_menu_cinema[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_menu_cinema_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_menu_lighting[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_menu_lighting_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_menu_lighting[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_menu_lighting_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_menu_music[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_menu_music_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_menu_music[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_menu_music_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_menu_security[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_menu_security_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_menu_security[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_menu_security_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_small[state='0']"><![CDATA[padding: 0px 9px 0px 9px; -webkit-border-image: url(Assets\Buttons\btn_small_off.png) 0 9 0 9; text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 14px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_small[state='1']"><![CDATA[padding: 0px 9px 3px 9px; -webkit-border-image: url(Assets\Buttons\btn_small_on.png) 0 9 3 9; text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 14px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_menu_heating[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_menu_heating_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_menu_heating[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_menu_heating_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".tick[state='0']"><![CDATA[padding: 0px 0px 0px 0px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".tick[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Others\tick.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".play[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\play_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".play[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\play_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="background" name=".textarea"><![CDATA[ background-image: url(Assets\Others\img_text_area_black.png); background-repeat: no-repeat;]]></theme>
+    <theme type="button" name=".btn_arrow_up[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\arrow_up_off1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_arrow_up[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\arrow_up_on1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_arrow_down[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\arrow_down_off1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_arrow_down[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\arrow_down_on1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".panel[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Others\panel.png); color: White; font-size: 20px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".panel[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Others\panel.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_bar_copy[state='0']"><![CDATA[padding: 0px 6px 0px 6px; -webkit-border-image: url(Assets\Buttons\btn_bar_off.png) 0 6 0 6; text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_bar_copy[state='1']"><![CDATA[padding: 0px 6px 0px 6px; -webkit-border-image: url(Assets\Buttons\btn_bar_on.png) 0 6 0 6; text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="text" name=".title_copy"><![CDATA[ text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 18px; font-family: 'Verdana'; text-align: center; vertical-align: middle; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="button" name=".btn_bar_copy1[state='0']"><![CDATA[padding: 0px 6px 0px 6px; -webkit-border-image: url(Assets\Buttons\btn_bar_off.png) 0 6 0 6; text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_bar_copy1[state='1']"><![CDATA[padding: 0px 6px 0px 6px; -webkit-border-image: url(Assets\Buttons\btn_bar_on.png) 0 6 0 6; text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="text" name=".title_copy1"><![CDATA[ text-shadow: rgba(0,0,0,1) 0px -1px 0px; color: White; font-size: 18px; font-family: 'Verdana'; text-align: center; vertical-align: middle; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="button" name=".btn_list_disabled_copy[state='0']"><![CDATA[padding: 0px 0px 0px 0px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: top; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_list_disabled_copy[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(Assets\Buttons\btn_list_disabled.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: top; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_list_copy[state='0']"><![CDATA[padding: 0px 0px 0px 5px; background-image: url(Assets\Buttons\btn_list_off.png); color: White; font-size: 22px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: left; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_list_copy[state='1']"><![CDATA[padding: 0px 0px 0px 5px; background-image: url(Assets\Buttons\btn_list_on.png); color: White; font-size: 22px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: left; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+  </themes>
+  <scripts>
+    <script name="nuvo.js" />
+  </scripts>
+  <page name="Home" j="0" transition="None" subtype="None" time="0" ease="" start="1">
+    <portrait />
+    <landscape t="landscape">
+      <img x="0" y="68" w="133" h="700" j="0" clickthrough="0" refresh="0" l="1" noCache="0" downloadIndicator="0" clearOnURLChange="0">Assets\Others\img_sidemenu_bg.png</img>
+      <img x="0" y="711" w="129" h="57" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">Assets\Others\img_sidemenu_bottom.png</img>
+      <img x="0" y="20" w="1024" h="61" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">Assets\Others\img_topbar.png</img>
+      <txt j="0" x="0" y="30" w="129" h="26" t="title" wrap="False" l="0">menu</txt>
+      <txt j="1" x="144" y="30" w="549" h="26" t="title_left" wrap="False" l="0">Welcome</txt>
+      <img x="123" y="68" w="7" h="700" j="0" clickthrough="1" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">Assets\Others\img_sidemenu_shadow.png</img>
+      <btn j="1" x="0" y="100" w="129" h="109" t="btn_menu_cinema" flip="None" sim="0" l="0" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="2" x="0" y="210" w="129" h="109" t="btn_menu_music" flip="None" sim="0" l="0" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="3" x="0" y="330" w="129" h="109" t="btn_menu_lighting" flip="None" sim="0" l="0" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="4" x="0" y="450" w="129" h="109" t="btn_menu_security" flip="None" sim="0" l="0" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="5" x="0" y="570" w="129" h="109" t="btn_menu_heating" flip="None" sim="0" l="0" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="705" y="255" w="113" h="107" t="btn_lrg" flip="None" sim="1" l="0" s="1" js="NUVO.zoneStartup();">
+        <inactive s="0">Zones</inactive>
+        <active s="0">Zones</active>
+      </btn>
+      <subpage name="Music_List_Zones" x="142" y="81" j="0" transition1="" subtype1="" time1="0" ease1="" transition2="" subtype2="" time2="0" ease2="" clickthrough="0" topmost="0" v="1" l="0" />
+    </landscape>
+  </page>
+  <subpage name="list_item_zone" w="360" h="66">
+    <btn j="3" x="0" y="1" w="360" h="64" t="btn_list_disabled" flip="None" sim="0" l="0" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <btn j="1" x="1" y="0" w="359" h="64" t="btn_list" flip="None" sim="1" l="0" s="1" js="NUVO.selectZone(list, listIndex);">
+      <inactive s="2">Test</inactive>
+      <active s="2">Test</active>
+    </btn>
+  </subpage>
+  <subpage name="Music_List_Zones" w="368" h="668">
+    <img x="1" y="47" w="368" h="574" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">Assets\Others\img_list_bg.png</img>
+    <list j="1" x="6" y="52" w="360" h="579" headerSub="" titleSub="" contentSub="list_item_zone" footerSub="" orientation="v" l="0" swipedelete="0" />
+    <img x="0" y="607" w="368" h="61" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">Assets\Others\img_list_bottom.png</img>
+    <img x="0" y="0" w="368" h="61" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">Assets\Others\img_list_top.png</img>
+    <btn j="0" x="129" y="627" w="99" h="30" t="btn_bar" flip="None" sim="1" l="0" s="1">
+      <inactive s="0">Refresh</inactive>
+      <active s="0">Refresh</active>
+    </btn>
+    <txt j="0" x="0" y="7" w="360" h="31" t="title" wrap="False" l="0">Music Zones</txt>
+  </subpage>
+</gui>
